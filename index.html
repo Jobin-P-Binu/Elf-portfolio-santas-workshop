@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elarion Sparkwhistle | Senior Innovation Elf</title>
+    <meta name="description" content="Portfolio of Elarion Sparkwhistle, Senior Innovation Elf at Santa's Workshop. Toy engineering, holiday experience design, and magical automation.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="cursor-star" class="cursor-star"></div>
+    <div id="cursor-trail" class="cursor-trail"></div>
+
+    <!-- Background Layers -->
+    <div class="snow-container" id="snow-container"></div>
+    <div class="twinkle-overlay"></div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🎄</span>
+                <span class="logo-text">Elarion</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Creations</a></li>
+                    <li><a href="#contact" class="btn-nav">Hire Me</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div id="north-star" class="north-star" role="button" aria-label="North Star Easter Egg" tabindex="0">⭐</div>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-wrapper">
+                <img src="assets/images/hero-bg.png" alt="Santa's Workshop at North Pole" class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <h1 class="animate-up delay-1">
+                    Hi! I’m <span class="highlight-text">Elarion</span>,<br>
+                    an Elf Who Turns Holiday Dreams into Reality 🎄✨
+                </h1>
+                <p class="subtitle animate-up delay-2">Senior Innovation Elf specializing in Magical Engineering & Joy Optimization</p>
+                
+                <div class="cta-group animate-up delay-3">
+                    <a href="#projects" class="btn btn-primary glow-effect">View My Creations</a>
+                    <a href="#contact" class="btn btn-secondary glass-effect">Send Message to Santa HQ</a>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator animate-bounce">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- 2. About the Elf -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">About the Elf</h2>
+                    <div class="decorative-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper animate-slide-right">
+                        <div class="image-frame">
+                            <img src="assets/images/elf-avatar.png" alt="Elarion Sparkwhistle" class="profile-image">
+                            <div class="floating-badge badge-1">Top Inventor 2024 🏆</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text animate-slide-left">
+                        <h3>Creating Joy Through Innovation</h3>
+                        <p>For over 125 years, I've been optimizing the magic at Santa's Workshop. From streamlining the candy cane supply chain to developing the first AI-powered Naughty/Nice sorter, I believe that a little bit of technology makes the holiday spirit shine even brighter.</p>
+                        <p>I thrive in high-pressure environments (December 24th is my favorite day!) and love collaborating with reindeer, sprites, and fellow elves to solve impossible problems.</p>
+                        
+                        <div class="stats-container">
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon">🎁</div>
+                                <div class="stat-number" data-target="12540">0</div>
+                                <div class="stat-label">Toys Designed</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon">⚙️</div>
+                                <div class="stat-number" data-target="7">0</div>
+                                <div class="stat-label">Workshops Optimized</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon">🎄</div>
+                                <div class="stat-number" data-target="1000000">0</div>
+                                <div class="stat-label">Happy Kids Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills & Magical Abilities -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Magical Abilities</h2>
+                    <p class="section-subtitle">A blend of ancient elf magic and modern engineering</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Skill 1 -->
+                    <div class="skill-card glass-card animate-pop delay-1">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Toy Engineering</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 98%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 2 -->
+                    <div class="skill-card glass-card animate-pop delay-2">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Magical Automation</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 3 -->
+                    <div class="skill-card glass-card animate-pop delay-3">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Naughty/Nice AI</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 4 -->
+                    <div class="skill-card glass-card animate-pop delay-4">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3>Snow Energy Opt.</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 5 -->
+                    <div class="skill-card glass-card animate-pop delay-5">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-sleigh"></i>
+                        </div>
+                        <h3>Sleigh Logistics</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill 6 -->
+                    <div class="skill-card glass-card animate-pop delay-6">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3>Storytelling</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 96%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Featured Creations</h2>
+                    <p class="section-subtitle">Innovations that saved Christmas</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card animate-up">
+                        <div class="project-image">
+                            <img src="assets/images/projects/wrapping-machine.png" alt="Auto-Wrapping Gift Machine">
+                            <div class="project-overlay">
+                                <button class="btn-view-project" data-id="project-1">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Auto-Wrapping Gift Machine</h3>
+                            <p class="project-desc">Hyper-efficient wrapping system using brass gears and magic.</p>
+                            <div class="tech-tags">
+                                <span>Magic</span>
+                                <span>Mechanics</span>
+                                <span>Steam</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card animate-up delay-1">
+                        <div class="project-image">
+                            <img src="assets/images/projects/dream-toy.png" alt="Interactive Dream Toy System">
+                            <div class="project-overlay">
+                                <button class="btn-view-project" data-id="project-2">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Interactive Dream Toy</h3>
+                            <p class="project-desc">Personalized toy behavior based on child imagination.</p>
+                            <div class="tech-tags">
+                                <span>Holograms</span>
+                                <span>AI</span>
+                                <span>Cloud Data</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card animate-up delay-2">
+                        <div class="project-image">
+                            <img src="assets/images/projects/magical-dashboard.png" alt="Magical Automation Dashboard">
+                            <div class="project-overlay">
+                                <button class="btn-view-project" data-id="project-3">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Magical Automation Dashboard</h3>
+                            <p class="project-desc">Centralized control unit for the main workshop floor.</p>
+                            <div class="tech-tags">
+                                <span>UI/UX</span>
+                                <span>Runes</span>
+                                <span>Real-time</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card animate-up delay-3">
+                        <div class="project-image">
+                            <img src="assets/images/projects/sleigh-optimizer.png" alt="Sleigh Route Optimization">
+                            <div class="project-overlay">
+                                <button class="btn-view-project" data-id="project-4">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sleigh Route Optimizer</h3>
+                            <p class="project-desc">Global pathfinding system for maximum delivery efficiency.</p>
+                            <div class="tech-tags">
+                                <span>Algorithms</span>
+                                <span>GPS</span>
+                                <span>Weather API</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Tech Stack -->
+        <section id="tech-stack" class="tech-stack-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">North Pole Tech Stack</h2>
+                </div>
+                
+                <div class="tech-dashboard glass-panel">
+                    <div class="tech-item floating animate-float delay-1">
+                        <div class="tech-icon"><i class="fas fa-candy-cane"></i></div>
+                        <span class="tech-name">Candy Cane FW</span>
+                    </div>
+                    <div class="tech-item floating animate-float delay-2">
+                        <div class="tech-icon"><i class="fas fa-snowflake"></i></div>
+                        <span class="tech-name">Snowflake.js</span>
+                    </div>
+                    <div class="tech-item floating animate-float delay-3">
+                        <div class="tech-icon"><i class="fas fa-robot"></i></div>
+                        <span class="tech-name">Elvish AI</span>
+                    </div>
+                    <div class="tech-item floating animate-float delay-4">
+                        <div class="tech-icon"><i class="fas fa-icicles"></i></div>
+                        <span class="tech-name">FrostCSS</span>
+                    </div>
+                    <div class="tech-item floating animate-float delay-5">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <span class="tech-name">ReindeerDB</span>
+                    </div>
+                    
+                    <!-- Decorative lines connecting tech -->
+                    <svg class="tech-connections" width="100%" height="100%">
+                         <!-- Lines will be drawn via CSS/JS or simple SVG background -->
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Workshop Endorsements</h2>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">Elarion is the reason Christmas never crashes. His route optimizer saved us 45 minutes last year!</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/santa-avatar.png" alt="Santa Claus">
+                            <div class="author-info">
+                                <h4>Santa Claus</h4>
+                                <span>CEO, North Pole Enterprises</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon">❝</div>
+                        <p class="testimonial-text">The most creative engineer I've ever worked with. His cookie-dispensing keyboard idea was genius.</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/mrs-claus-avatar.png" alt="Mrs. Claus">
+                            <div class="author-info">
+                                <h4>Mrs. Claus</h4>
+                                <span>Head of Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper glass-panel">
+                    <div class="contact-scroll-bg"></div>
+                    
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Join Santa's Team</h2>
+                        <p>Have an idea or want to collaborate? Send a scroll!</p>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Elf Name / Human Name</label>
+                            <input type="text" id="name" required placeholder="E.g. Buddy the Elf">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency">
+                                <option value="low">Standard Delivery (3-5 days)</option>
+                                <option value="medium">Express Sleigh (24 hours)</option>
+                                <option value="high">Code Red (Christmas Eve Emergency!)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Wish / Message</label>
+                            <textarea id="message" rows="5" required placeholder="Type your magical message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block glow-effect">Send via Reindeer Express 🦌</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Elarion Sparkwhistle. Made with 🎄 and 🍪 at the North Pole.</p>
+            <div class="social-links">
+                <a href="#" aria-label="North Pole Intranet"><i class="fas fa-globe-snow"></i></a>
+                <a href="#" aria-label="ElfHub"><i class="fab fa-github-alt"></i></a>
+                <a href="#" aria-label="SleighMail"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content injected via JS -->
+                 <img src="" alt="" id="modal-img">
+                 <h3 id="modal-title"></h3>
+                 <p id="modal-desc"></p>
+                 <div class="modal-tags" id="modal-tags"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/snowfall.js"></script>
+    <script src="js/easteregg.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
